@@ -4,13 +4,14 @@
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/10456/10456439.png">
          <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
          <title>SRIDA PW</title>
          <style>
             body{
                 margin:0;
                 width:100%;
                 top:0;
-               
+                font-family:'Playfair Display';
             }
             .icons{
                 top:0;
@@ -28,25 +29,27 @@
                 margin-top:0.5%;
                 font-size:100%;
                 font-weight:bold;
-            
-                
             }
+            
+            .icons>a>i:hover{
+                color:purple;
+            }
+                
+            
             .box{
                 width:100%;
             }
             
             .box > div{ 
                 width: 100%;
-                height:100%;
                 padding:0;
                 margin:0;
                 border:0;
             }
             .head{
-                flex-direction:row;
-                overflow:hidden;
+                overflow: hidden;
             }
-            .home1{
+            .home{
                 width:75%;
                 height:500px;
                 margin-top:100px;
@@ -55,8 +58,10 @@
                 border-radius:30px;
                 display:flex;
                 margin-left:10%;
+                gap:5%;
                 
             }
+           
             
             
             .home2{
@@ -67,32 +72,37 @@
                 justify-content:center;
                 margin-left: auto;
                 transform:translateX(-75%);
+                overflow: hidden;
                
             }
             .home2 a{
-                color:#73ccef;
+                color:white;
+            }
+            .home2 a:hover{
+                color:rgb(228, 6, 228);
             }
             .sideo{
-                flex:0 0 50%;
-                font-size:50px;
-                margin-top:80px;
-                margin-bottom:10px;
-                margin-left:70px;
+                flex:0 1 50%;
+                font-size:250%;
+                margin-top:5%;
+                margin-bottom:2%;
+                margin-left:8%;
+                color:white;
                 
             
 
             }
             .sidet{
-                flex:0 0 50%;
+                flex:0 1 50%;
                 
             }
             .sidet>div{
-                border:80px;
-                border-radius:320px;
-                background-color:#73ccef;
-                width:400px;
-                height:400px;
-                margin:50px;
+                border:15%;
+                border-radius:60%;
+                background-color:rgb(228, 6, 228);
+                width:80%;
+                height:80%;
+                margin:5%;
                 
             }
             #about{
@@ -103,11 +113,11 @@
                 
             }
             #about>div{
-               margin-top:10%;
+               margin-top:14%;
                width:100%;
                height:50%;
                padding-right:25%;
-               padding-top:10%;
+               padding-top:30%;
                background-color:white;
                margin-right:5%;
                margin-left:5%;
@@ -115,7 +125,8 @@
             }
             #about>p{
                 margin-top:12%;
-                margin-right:5%;
+                margin-right:3%;
+                padding:3%;
             
             }
             #education{
@@ -138,6 +149,9 @@
                 flex-direction:column;
                 margin:10%;
                 padding:5%;
+            }
+            .skills>div>div>p{
+                color:rgb(228, 6, 228);
             }
             .s1,.s2{
                 display:flex;
@@ -162,9 +176,16 @@
                 font-size:xx-large;
                 
             }
+            .skills>div>div:hover{
+               background-color:rgb(235, 193, 235);
+            }
+            
             #test{
                 background-color:black;
                 overflow: hidden;
+            }
+            #test>p{
+                margin-left:40%;
             }
             .te{
                 display:flex;
@@ -181,13 +202,20 @@
                 font-size:large;
                 border-radius:10%;
             }
+            .te>div:hover{
+                background-color:rgb(228, 6, 228);
+            }
             #EXPERIENCE{
                 background-color:black;
-                overflow: hidden;
+                overflow:hidden;
+            
+            }
+            #EXPERIENCE>p{
+                 margin-left:40%;
             }
             .ex{
                 display:flex;
-                
+                overflow: hidden;
                 width:80%;
                 height:100%;
                 
@@ -204,14 +232,20 @@
                 color:white;
                 background-color:black;
                 width:100%;
-                height:29%;
+                height:auto;
                 padding:5%;
+            }
+            .ex>div>div:hover{
+                background-color:rgb(228, 6, 228);
             }
            
             .pf{
                 display:flex;
                 justify-content:space-evenly;
             }
+            #PROJECTS>p{
+            margin-left:40%;
+         }
             .ps{
                 display:flex;
                 justify-content:space-evenly;
@@ -229,7 +263,120 @@
                 padding:9%;
                 border-radius:10%;
             }
-            
+            @media screen and (max-width: 768px) {
+         .home2 {
+          display: none;
+          padding:0;
+          margin:0;
+          }
+         .home{
+            flex-direction: column-reverse;
+            gap:0;
+         }
+         .sidet>div{
+            height:90%;
+            width:35%;
+            margin-left:35%;
+         }
+         #about{
+            flex-direction: column;
+         }
+         #about>div{
+            height:50%;
+            width:40%;
+            margin-left:15%;
+         }
+         #education{
+            flex-direction: column;
+         }
+         .eq{
+            width:60%;
+         }
+         .skills{
+            margin-left:30%;
+         }
+         #test>p{
+             margin-left:30%;
+         }
+         .te{
+            flex-direction: column;
+         }
+         .te>div{
+            border-radius:5%;
+         }
+         .ex{
+            display: block;
+            height:auto;
+         }
+         #experience{
+            height:auto;
+         }
+        #experience>p{
+            margin-left:35%;
+        }
+        .ex>div{
+            height:auto;
+        }
+         
+         .exf>div{
+            overflow:auto;
+         }
+         .exs>div{
+            overflow:auto;
+         }
+         #PROJECTS>p{
+            margin-left:30%;
+         }
+         .pf{
+            flex-direction: column;
+            gap:15%;
+         }
+         .pf>div{
+            margin-bottom:5%;
+            width:20%;
+            margin-left:30%
+         }
+         .ps>div{
+             width:20%;
+            margin-left:23%;
+            margin-bottom:5%;
+         }
+         .ps{
+            flex-direction: column;
+            gap:15%;
+           
+         }
+        }
+        
+        @media screen and (max-width: 481px){
+            .icons>a{
+                padding: auto;
+                margin:auto;
+
+            }
+            .sidet{
+                display: none;
+            }
+            .skills{
+            margin-left:20%;
+         }
+         .eq{
+            width:70%;
+         }
+         #contact{
+            height:auto;
+         }
+         #test>p{
+             margin-left:20%;
+         }
+         #PROJECTS>p{
+            margin-left:25%;
+         }
+          #experience>p{
+            margin-left:20%;
+        }
+        }
+
 
         </style>
     </head>
@@ -237,13 +384,13 @@
          <div class="icons">
             <p style="color:white">SRIDA</p>
             <div class="home2">
-                            <a href="#HOME"><i class="material-icons">home</i></a>
-                            <a href="#ABOUT"><i class="material-icons">person</i></a>
-                            <a href="#EDUCATION"><i class="material-icons">school</i></a>
-                            <a href="#TEST"><i class="material-icons">person</i></a>
-                            <a href="#EXPERIENCE"><i class="material-icons">work</i></a>
-                            <a href="#PROJECTS"><i class="material-icons">build</i></a>
-                            <a href="#CONTACT"><i class="material-icons">email</i></a>
+                            <a href="#HOME" title="Home"><i class="material-icons">home</i></a>
+                            <a href="#ABOUT" title="About me"><i class="material-icons">person</i></a>
+                            <a href="#EDUCATION" title="Education"><i class="material-icons">school</i></a>
+                            <a href="#TEST" title="Testimonials"><i class="material-icons">person</i></a>
+                            <a href="#EXPERIENCE" title="Experience"><i class="material-icons">work</i></a>
+                            <a href="#PROJECTS" title="Projects"><i class="material-icons">build</i></a>
+                            <a href="#CONTACT" title="Contact me"><i class="material-icons">email</i></a>
 
                   </div>
             <a href="https://www.instagram.com/" target="_blank">
@@ -257,14 +404,16 @@
             </a>
             
         </div>
+    
+ 
         
         
             <div class ="box">
-              <div class="head" id="HOME" style="height:98%; background-color:black;">
-                 <div class="home1" style="background-color:white;">
+              <div class="head" id="HOME" style=" background-color:black;">
+                    <div class="home">
                     <div class="sideo">
-                        <p style="margin-bottom:10px;">I'M SRIDA,<span style="color: #73ccef">WEB DEVELOPER AND PROBLEM SOLVER</span> </p>
-                        <p style="font-size:25px; margin-top:10px">:-A passionate web and software developer dedicated to crafting innovative and seamless digital work</p>
+                        <p style="margin-bottom:10px;">I'M SRIDA,<span style="color:rgb(228, 6, 228);">WEB DEVELOPER AND PROBLEM SOLVER</span> </p>
+                        <p style="font-size:large;">:-A passionate web and software developer dedicated to crafting innovative and seamless digital work</p>
 
                     </div>
                     <div class="sidet"> 
@@ -272,11 +421,12 @@
                             
                         </div>
                     </div>
-                  </div> 
+                </div>
+                
                 </div>
              <div id="ABOUT" style="background-color: black; overflow:hidden;">
                  <div> </div>
-                 <p style="color:white; font-size:large;"><span style="font-size: xx-large">ABOUT ME</span><br><br>I’m currently on an exciting journey of learning and building in the world of web development. I enjoy turning ideas into interactive and visually appealing digital experiences. With every new project, I dive deeper into the art of writing clean code, designing intuitive interfaces, and delivering seamless user experiences.Beyond development, I have a strong inclination toward marketing and communication. I believe that building something great is only part of the story — presenting it well and connecting with the right audience makes the impact complete. I love exploring how tech and creativity blend to deliver engaging campaigns and solutions.
+                 <p style="color:white; font-size:large;"><span style="font-size: xx-large">ABOUT <span style="color:rgb(228, 6, 228);">ME</span></span><br><br>I’m currently on an exciting journey of learning and building in the world of web development. I enjoy turning ideas into interactive and visually appealing digital experiences. With every new project, I dive deeper into the art of writing clean code, designing intuitive interfaces, and delivering seamless user experiences.Beyond development, I have a strong inclination toward marketing and communication. I believe that building something great is only part of the story — presenting it well and connecting with the right audience makes the impact complete. I love exploring how tech and creativity blend to deliver engaging campaigns and solutions.
 
 Problem-solving is at the heart of everything I do. Whether it’s debugging a tricky piece of code, brainstorming for a campaign, or designing user flows — I enjoy breaking challenges down and finding smart, efficient solutions.
 
@@ -285,7 +435,7 @@ I’m also someone who values creativity. Whether it's designing a layout, comin
              
              <div id="EDUCATION">
                 <div class="eq" style="background-color:black;">
-                    <p style="font-size: xx-large;color:white">EDUCATION QUALIFICATIONS</p>
+                    <p style="font-size: xx-large;color:white">EDUCATION <span style="color:rgb(228, 6, 228)">QUALIFICATIONS</span></p>
                     <ul >
                         <li>Pursuing B.Tech in Computer Science at NITK Surathkal
                         <br>current CGPA:9.25</li>
@@ -327,7 +477,7 @@ I’m also someone who values creativity. Whether it's designing a layout, comin
              </div>
              <div id="TEST">
             
-                <p style="font-size:xx-large; margin-top:5%;margin-left:40%;color:white;">WHAT CLIENTS SAY:</p>
+                <p style="font-size:xx-large; margin-top:5%;color:white;">WHAT <span style="color:rgb(228, 6, 228);">CLIENTS SAY:</span></p>
                  <div class="te">
                 <div>
                 Srida consistently delivers high-quality and innovative solutions that go well beyond project requirements. Her technical proficiency is matched by her problem-solving mindset, which has helped us overcome numerous complex challenges. John is not just task-focused — she understands the bigger picture, aligns her efforts with project goals, and communicates effectively across teams. It’s rare to find someone who combines creativity, precision, and reliability so seamlessly. She’s been a key contributor to our project’s success and a pleasure to collaborate with.
@@ -340,7 +490,7 @@ I’m also someone who values creativity. Whether it's designing a layout, comin
               </div>
              </div>
              <div id="EXPERIENCE">
-                <p style="color:white; margin-top:8%;margin-top:6%;font-size: xx-large; margin-left:40%;">EXPERIENCE</p>
+                <p style="color:white; margin-top:8%;margin-top:6%;font-size: xx-large;color:rgb(228, 6, 228);">EXPERIENCE</p>
                 <div class="ex">
                      <div class="exf">
                         <div>
@@ -353,7 +503,7 @@ I’m also someone who values creativity. Whether it's designing a layout, comin
                         <div>
                          <i class="material-icons" style="padding-left:40%;padding-top:20%;">campaign</i>
                          <p style="font-size:large;margin-left:25%;">MARKETING</p>
-                         <p> Worked as part of the Marketing team for Engineer, NITK’s annual tech fest, handling outreach and promotions.Contributed to sponsorship acquisition and brand communication to boost event visibility.</p>
+                         <p> Worked as part of the Marketing team for Engineer, NITK’s annual tech fest, handling outreach and promotions.Contributed to sponsorship acquisition.</p>
                         
                         </div>
                         
@@ -375,7 +525,7 @@ I’m also someone who values creativity. Whether it's designing a layout, comin
                 </div>
              </div>
              <div id="PROJECTS" style="background-color:black;overflow: hidden;">
-                <p style="color:white; font-size:xx-large;margin-left:10%;margin-top:10%;margin-bottom:2%;">MY PROJECTS</p>
+                <p style="color:white; font-size:xx-large;margin-top:10%;margin-bottom:2%;color:rgb(228, 6, 228);">MY PROJECTS</p>
                 <div class="pf">
                     <div>project1</div>
                     <div>project2</div>
@@ -390,18 +540,19 @@ I’m also someone who values creativity. Whether it's designing a layout, comin
                 </div>
              </div>
              <div id="CONTACT" style="background-color:black;overflow: hidden;">
-                <div style="width:70%; height:60%;background-color:white; margin-left:13%; margin-top:10%; border:1px; border-radius:20px; overflow: hidden;">
-                      <p style="font-size:xx-large; margin-top:10%;margin-left:10%; margin-bottom:1%">LET'S CONNECT:<br></p>
+                <div style="width:70%; height:60%;background-color:white; margin-left:13%; margin-top:10%;margin-bottom:8%; border:1px; border-radius:20px; overflow: hidden;">
+                      <p style="font-size:xx-large; margin-top:8%;margin-left:10%; margin-bottom:1%">LET'S <span style="color:purple;">CONNECT:</span><br></p>
                       <span style="font-size: medium;margin-left:10%">Feel free to reach out for collaborations, freelance work, or just to say hi!</span>
-                      <br><p style="margin-left:10%">Email:<br><a href="https://mail.google.com/mail/?view=cm&fs=1&to=sridashanmukha@gmail.com" target="_blank" class="email-button">Send me</a></p>
-                      <p style="margin-left:10%">Phone number<br>+91000000000</p>
-                      <p style="margin-left:10%">Address<br>NITK Surathkal<br>Manguluru,Karnataka<br>575025</p>
+                      <br><p style="margin-left:10%">Email:<br><a href="https://mail.google.com/mail/?view=cm&fs=1&to=sridashanmukha@gmail.com" target="_blank" class="email-button" style="color:purple;" >Send me</a></p>
+                      <p style="margin-left:10%">Phone number<br><span style="color:purple;">+91000000000</span></p>
+                      <p style="margin-left:10%">Address<br>NITK Surathkal<br>Manguluru,Karnataka<br></p>
 
                 </div>
                 
              </div>
                 
             </div>
+            
         
     </body>
 </html>
