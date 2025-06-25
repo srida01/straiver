@@ -3,13 +3,18 @@ import storedData from "./src/data";
 import Checkbox from "./components/checkbutton";
 import { FloatingDock } from "./components/ui/floating-dock";
 import Switch from "./components/switch";
+import Button from "./buttonforproblems";
+
+
 
 import Buttonpr from "./components/button-prob";
 import  Logoi from "./assets/icons/home.svg"
 import  CodeIcon  from "./assets/icons/code.svg"
-
+import { NavLink } from "react-router-dom";
 import logof from "./assets/icons/chart.svg"
 import logofi from "./assets/icons/user.svg"
+
+
 
 const SnvtoRC = ({snv}:{snv:string}) => {
   return (
@@ -18,6 +23,7 @@ const SnvtoRC = ({snv}:{snv:string}) => {
     </div>
   );
 };
+
 
 function display(){
    const {rid}=useParams();
@@ -37,11 +43,15 @@ function display(){
                         { num.data?.map((s:string,x:number)=>(
                        <div key={x} className="grid grid-cols-5 gap-5 hover:bg-[#15dadd]  p-3">
                         
-                         <Checkbox/>
+                        
+                         <Checkbox />
                        
                          
                         <div className="text-white">{s}</div>
-                     
+                        
+                        <NavLink to={`/Problems/${rid}/${s}`}>
+                        <Button/>
+                        </NavLink>
                         
                     
                         <Buttonpr/>
@@ -86,13 +96,16 @@ const INtems:Items[]=[{title:"Home",icon:<SnvtoRC snv={Logoi} />,href:"/Home"},{
 
   return( 
     <>
-    <div className="bg-[#0e1a2b] pl-10">
+    
+    <div className="bg-[#0e1a2b] pl-10 overflow-x-hidden h-full">
       <FloatingDock items={INtems} desktopClassName="bg-white/10 " />
 
-      <div>{rid}</div>
+      <div className="text-white">{rid}</div>
     
         <div className="w-full">{display()}</div>
-    
+       <div className="bg-[#0e1a2b h-[20vw]">
+
+       </div>
     
     </div>
    

@@ -24,8 +24,8 @@ export default function ProblemS(){
 const INtems:Items[]=[{title:"Home",icon:<SnvtoRC snv={Logoi} />,href:"/Home"},{title:"Problems",icon:<SnvtoRC snv={CodeIcon}/>,href:"/Problems"},{title:"Progress",icon:<SnvtoRC snv={logof}/>,href:"/Progress"},{title:"Profile",icon:<SnvtoRC snv={logofi}/> ,href:"/Profile"}]
    return(
    <>
-   
-   <div className="grid place-items-center bg-[#0e1a2b]">
+   <div className="h-full bg-[#0e1a2b] overflow-x-hidden">
+    <div className="grid place-items-center bg-[#0e1a2b]">
     <FloatingDock items={INtems} desktopClassName="bg-white/10 " />
      <div className="h-40 rounded-l-full  border-l-cyan-400 w-30 border-l-[#0e1a2b] border-t-[#0e1a2b] border-[#0e1a2b] border-5"></div>
      <Link to="/Problems/Learn Basics">
@@ -44,11 +44,15 @@ const INtems:Items[]=[{title:"Home",icon:<SnvtoRC snv={Logoi} />,href:"/Home"},{
      </Link>
 
     <div className="h-60 rounded-l-full  border-l-cyan-400 w-40 border-r-[#0e1a2b] border-t-[#0e1a2b] border-[#0e1a2b] border-5"></div>
-     <Link to="/Problems/Strings(Basicandmedium}">
+     <Link to="/Problems/Strings(Basicandmedium)">
        <Tooltip shin={"Level 4"} thin={"Strings"}/>
      </Link>
- 
+    <div className="w-full h-[20vw]">
+
+    </div>
    
+   
+   </div>
    
    </div>
    

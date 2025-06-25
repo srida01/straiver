@@ -4,7 +4,7 @@ const ai = new GoogleGenAI({ apiKey: MY_API_KEY});
 export default async function main(query:string) {
   const response = await ai.models.generateContent({
     model: "gemini-2.5-flash",
-    contents: "Give the hints to solve the dsa question"+query,
+    contents: "Give me optimised version of this"+query
   });
   console.log(response.text);
 }

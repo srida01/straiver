@@ -1,11 +1,12 @@
-
+import { useState } from 'react';
 import styled from 'styled-components';
 
 const Switch = () => {
+    const[There,setThere]=useState(false);
   return (
     <StyledWrapper>
       <div className="toggle-container">
-        <input className="toggle-input" type="checkbox" />
+        <input className="toggle-input" type="checkbox" checked={There} onChange={(e)=>setThere(e.target.checked)}/>
         <div className="toggle-handle-wrapper">
           <div className="toggle-handle">
             <div className="toggle-handle-knob" />

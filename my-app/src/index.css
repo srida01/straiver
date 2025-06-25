@@ -1,9 +1,10 @@
 @import "tailwindcss";
 
-
+:root{
+ --animate-aurora: aurora 3s linear infinite;
+}
  
-inline {
-  --animate-aurora: aurora 60s linear infinite;
+  
   @keyframes aurora {
     from {
       background-position:
@@ -16,4 +17,4 @@ inline {
         350% 50%;
     }
   }
-}
+

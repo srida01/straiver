@@ -25,6 +25,7 @@ const userid=user?.id
     .from("users")
     .select("*")
     .eq("phone_number",Num)
+    console.log(data)
      if(error)
         console.log("fetch error")
     
