@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { FloatingDock } from "./components/ui/floating-dock";
 import  Logoi from "./assets/icons/home.svg"
 import  CodeIcon  from "./assets/icons/code.svg"
-import logot from "./assets/icons/notes.svg"
 import logof from "./assets/icons/chart.svg"
 import logofi from "./assets/icons/user.svg"
 const SnvtoRC = ({snv}:{snv:string}) => {
@@ -13,10 +12,7 @@ const SnvtoRC = ({snv}:{snv:string}) => {
     </div>
   );
 };
-type butonprops={
-  shin:string;
-  thin:string;
-}
+
 
 export default function ProblemS(){
   

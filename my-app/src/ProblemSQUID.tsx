@@ -1,9 +1,9 @@
-import { useParams } from "react-router-dom";
-import storedData from "./src/data";
+
+
 import { FloatingDock } from "./components/ui/floating-dock";
 import  Logoi from "./assets/icons/home.svg"
 import  CodeIcon  from "./assets/icons/code.svg"
-import logot from "./assets/icons/notes.svg"
+
 import logof from "./assets/icons/chart.svg"
 import logofi from "./assets/icons/user.svg"
 import Button from "./components/ui/checkboxinsquid";
@@ -60,7 +60,7 @@ export default function ProblemsSQUID(){
   setDis(!Dis)
   
 }
-const [code, setCode] = useState('');
+
 
     
 const INtems:Items[]=[{title:"Home",icon:<SnvtoRC snv={Logoi} />,href:"/Home"},{title:"Problems",icon:<SnvtoRC snv={CodeIcon}/>,href:"/Problems"},{title:"Progress",icon:<SnvtoRC snv={logof}/>,href:"/Progress"},{title:"Profile",icon:<SnvtoRC snv={logofi}/> ,href:"/Profile"}]

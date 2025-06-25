@@ -4,7 +4,7 @@ import { BackgroundBeams } from "./components/ui/background-beams";
 import Card from "./styled-components";
 import  Logoi from "./assets/icons/home.svg"
 import  CodeIcon  from "./assets/icons/code.svg"
-import logot from "./assets/icons/notes.svg"
+
 import logof from "./assets/icons/chart.svg"
 import logofi from "./assets/icons/user.svg"
 import { FloatingDock } from "./components/ui/floating-dock";

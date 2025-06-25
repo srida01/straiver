@@ -1,10 +1,4 @@
-type shi={
-  head:string;
-  data:string[];
-  description:string[];
-  exampleo:string[];
-  examplet:string[];
-}
+
 const storedData:any=[
 
 {id:"Learn Basics",subtopics:[

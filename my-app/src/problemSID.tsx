@@ -3,14 +3,14 @@ import storedData from "./src/data";
 import Checkbox from "./components/checkbutton";
 import { FloatingDock } from "./components/ui/floating-dock";
 import Switch from "./components/switch";
-import Button from "./buttonforproblems";
+
 import Buttonpr from "./components/button-prob";
 import  Logoi from "./assets/icons/home.svg"
 import  CodeIcon  from "./assets/icons/code.svg"
-import logot from "./assets/icons/notes.svg"
+
 import logof from "./assets/icons/chart.svg"
 import logofi from "./assets/icons/user.svg"
-import { Link } from "react-router-dom";
+
 const SnvtoRC = ({snv}:{snv:string}) => {
   return (
     <div className="HOME">
@@ -18,7 +18,7 @@ const SnvtoRC = ({snv}:{snv:string}) => {
     </div>
   );
 };
-let Value:any;
+
 function display(){
    const {rid}=useParams();
     
@@ -75,7 +75,7 @@ function display(){
 export default function ProblemSID(){
  
  const {rid}=useParams();
- Value=rid;
+ 
 type Items={ title: string; icon: React.ReactNode; href: string }
 
 const INtems:Items[]=[{title:"Home",icon:<SnvtoRC snv={Logoi} />,href:"/Home"},{title:"Problems",icon:<SnvtoRC snv={CodeIcon}/>,href:"/Problems"},{title:"Progress",icon:<SnvtoRC snv={logof}/>,href:"/Progress"},{title:"Profile",icon:<SnvtoRC snv={logofi}/> ,href:"/Profile"}]
