@@ -1,0 +1,12 @@
+{
+    "routes": [
+      { "src": "/Home","dest": "/" },
+      { "src": "/Problems", "dest": "/" },
+      { "src": "/Problems/:rid","dest": "/" },
+      { "src": "/", "dest": "/" },
+      { "src": "/Problems/:rid/:qid","dest": "/" },
+      { "src": "/Progress", "dest": "/" },
+      { "src": "/Profile", "dest": "/" }
+
+    ]
+  }
